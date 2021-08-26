@@ -19,9 +19,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
-import org.apache.tomcat.jni.File;
-
-
 @MultipartConfig
 public class ProductServlet extends HttpServlet 
 {
