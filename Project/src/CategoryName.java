@@ -49,11 +49,12 @@ public class CategoryName extends HttpServlet
 				stmt=con.createStatement();
 				rs=stmt.executeQuery(sql);
 				pw=res.getWriter();
-				pw.println("Category names :-");
+				pw.println("<b>Category names :-</b>");
+				pw.println("<br><br>");
 				while(rs.next()==true)
 				{
 				String a=rs.getString(1);
-				pw.println(a+",");
+				pw.println("<b>"+a+",</b>");
 				}
 			}
 			catch (Exception e)
