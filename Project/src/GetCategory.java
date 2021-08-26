@@ -56,15 +56,12 @@ public class GetCategory extends HttpServlet
 				{
 				String a=rs.getString(1);
 				String b=rs.getString(2);
-			//	pw.println(a+":- "+b);
-				
+	
 				req.setAttribute("pname", a);
 				req.setAttribute("pdesc", b);
 				RequestDispatcher rd;
 				rd=req.getRequestDispatcher("home.jsp");
 				rd.forward(req, res);
-			//	req.getServletContext().getRequestDispatcher("/GetProduct").include(req, res);
-				
 				}
 			}
 			catch (Exception e)
